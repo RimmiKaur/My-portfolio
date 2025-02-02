@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  background: linear-gradient(180deg, #121212, #1a1a1a);
+  color: white;
+}
+
+.scroll-down-indicator {
+  width: 40px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 10px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+|
+
+
+
+.starfield {
+  background-color: rgba(0,0,0,0);
+  
+  z-index: 0;
+}
+
+.star0 {
+  height: 1px;
+  width: 1px;
+  opacity: 1;
+  position: absolute;
+}
+
+.star1 {
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  opacity: 1;
+  position: absolute;
+}
+
+.star2 {
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  opacity: 1;
+  position: absolute;
+}
+
+.star3 {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  position: absolute;
+}
+
+.star4 {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  position: absolute;
+}
+
+
+
+.aeroplane-timeline img{
+	width: 50px;
+	height: 50px;
+	
+}
+
+.aeroplane-timeline{
+	position: sticky;
+	top:10%;
+  right:-100%;
+}
