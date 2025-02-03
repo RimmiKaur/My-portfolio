@@ -66,7 +66,7 @@ export default function HomePage({ darkMode }) {
   }, []);
 
   return (
-    <div className={` flex flex-col justify-center items-center transition-colors duration-300 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}>
+    <div className={` flex flex-col justify-center items-center transition-colors duration-300 pt-24 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}>
       <img src="/images/rimmikaur.jpg" alt="Rimmi Kaur" className="w-52 h-52 object-cover rounded-full border-[5px]" />
 
       <section ref={heroRef} className="text-center relative overflow-hidden">
