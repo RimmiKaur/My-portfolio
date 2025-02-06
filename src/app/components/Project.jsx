@@ -11,22 +11,7 @@ import "swiper/css/navigation";
 import { Pagination, Autoplay } from "swiper/modules";
 
 const projects = [
-    {
-        category: "Productivity Tools",
-        name: "ToDo-List App",
-        tech: ["React", "Next.js", "Tailwind CSS"],
-        description: "A task management app to create, update, delete, and organize tasks efficiently.",
-        github: "https://github.com/RimmiKaur/ToDo-List",
-        images: ["/images/to-do-1.png", "/images/to-do-2.png", "/images/to-do-3.png","/images/to-do-3.png", "/images/to-do-4.png"],
-    },
-    {
-        category: "Full-Stack Projects",
-        name: "Restaurant Booking System",
-        tech: ["Next.js", "Tailwind CSS", "Express.js", "MongoDB", "Axios"],
-        description: "A fully functional restaurant booking system allowing users to check table availability, book reservations, and manage bookings efficiently.",
-        github: "https://github.com/RimmiKaur/restaurant-booking",
-        images: ["/images/restaurant-1.png", "/images/restaurant-2.png", "/images/restaurant-3.png"],
-    },
+    
 
     {
         category: "Web Clones",
@@ -44,6 +29,25 @@ const projects = [
         github: "https://github.com/RimmiKaur/Meta-news-page ",
         images: ["/images/meta-1.png", "/images/meta-2.png", "/images/meta-3.png"],
     },
+
+    {
+        category: "Web Clones",
+        name: "Big Basket",
+        tech: ["HTML", "CSS", "Tailwind CSS"],
+        description: "A detailed replication of Big Basket homepage.",
+        github: "https://github.com/RimmiKaur/Big-Basket-HomePage-Clone",
+        images: ["/images/bigbasket-1.png", "/images/bigbasket-2.png", "/images/bigbasket-3.png",],
+    },
+
+     {
+        category: "Web Clones",
+        name: "Red Bus",
+        tech: ["HTML", "CSS", "Tailwind CSS"],
+        description: "A detailed replication of Red Bus homepage.",
+        github: "https://github.com/RimmiKaur/Red-Bus-Homepage-Clone",
+        images: ["/images/redbus-1.png", "/images/redbus-2.png"],
+    },
+
     {
         category: "Full-Stack Projects",
         name: "E-commerce Website",
@@ -51,6 +55,22 @@ const projects = [
         description: "A full-featured e-commerce site with React Routing & Context API.",
         github: "https://github.com/RimmiKaur/Project-4--Web-development",
         images: ["/images/eccom-1.png", "/images/eccom-2.png", "/images/eccom-3.png"],
+    },
+    {
+        category: "Productivity Tools",
+        name: "ToDo-List App",
+        tech: ["React", "Next.js", "Tailwind CSS"],
+        description: "A task management app to create, update, delete, and organize tasks efficiently.",
+        github: "https://github.com/RimmiKaur/ToDo-List",
+        images: ["/images/to-do-1.png", "/images/to-do-2.png", "/images/to-do-3.png","/images/to-do-3.png", "/images/to-do-4.png"],
+    },
+    {
+        category: "Full-Stack Projects",
+        name: "Restaurant Booking System",
+        tech: ["Next.js", "Tailwind CSS", "Express.js", "MongoDB", "Axios"],
+        description: "A fully functional restaurant booking system allowing users to check table availability, book reservations, and manage bookings efficiently.",
+        github: "https://github.com/RimmiKaur/restaurant-booking",
+        images: ["/images/restaurant-1.png", "/images/restaurant-2.png", "/images/restaurant-3.png"],
     },
     {
         category: "Android Apps",
@@ -68,6 +88,9 @@ const projects = [
         github: "https://github.com/RimmiKaur/Smart_Pants",
         images: ["/images/sat-5.jpg", "/images/sat-6.jpg", "/images/sat-7.jpg", "/images/sat-8.jpg",],
     },
+    
+
+
 
 
 ];
@@ -83,7 +106,7 @@ const ProjectsSection = ({ darkMode }) => {
             : projects.filter((project) => project.category === selectedCategory);
 
     return (
-        <div className={`w-full mx-auto p-10  md:p-44 md:pb-10 pb-10 ${darkMode ? "bg-white text-gray-900" : "bg-gray-900 text-white"}`}>
+        <div className={`w-full mx-auto p-10 md:pt-10  md:p-44 md:pb-10 pb-10 ${darkMode ? "bg-white text-gray-900" : "bg-gray-900 text-white"}`}>
             <h2 className={`text-4xl font-bold text-center ${darkMode ? "bg-white text-gray-900" : "bg-gray-900 text-white"}0 mb-10`}>🚀 My Projects</h2>
 
             <div className="flex justify-center space-x-4 mb-8">
