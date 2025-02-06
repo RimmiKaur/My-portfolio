@@ -98,7 +98,7 @@ const ExperienceEducation = ({ darkMode }) => {
         <div className="relative w-full max-w-3xl mx-auto">
           <div className="absolute left-0 md:left-1/2  top-0 w-1 h-full border-l-2 border-dashed border-blue-500 transform -translate-x-1/2"></div>
           {education.map((edu, index) => (
-            <div key={index} className={`bg-white p-6 shadow-md rounded-lg flex items-center gap-6 relative w-[85%] md:w-[45%] ${index % 2 === 0 ?  "md:mr-auto md:m-0 ml-10 m-10" : "md:ml-auto ml-10"}`}>
+            <div key={index} className={`bg-white p-6 shadow-md rounded-lg flex items-center gap-0  md:gap-6 relative w-[85%] md:w-[45%] ${index % 2 === 0 ?  "md:mr-auto md:m-0 ml-10 m-10" : "md:ml-auto ml-10"}`}>
               <div>
                 <h3 className="text-xl font-semibold text-gray-800">{edu.institution}</h3>
                 <p className="text-gray-600">{edu.degree}</p>
@@ -107,7 +107,7 @@ const ExperienceEducation = ({ darkMode }) => {
                 <p className="text-gray-700 mt-2">{edu.details}</p>
               </div>
               <img src={edu.logo} alt={edu.institution} width={60} height={60} className="rounded-full border border-gray-300" />
-              <div className=  {`absolute top-1/2  transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-blue-500 rounded-full border-2 border-white ${index % 2 === 0 ? " right-0 md:right-[-53px]": "left-[-40px] md:left-[-40px] " }`} >
+              <div className=  {`absolute top-1/2  transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-blue-500 rounded-full border-2 border-white ${index % 2 === 0 ? " left-[-40px] md:right-[-53px]": "left-[-40px] md:left-[-40px] " }`} >
               </div>
             </div>
           ))}

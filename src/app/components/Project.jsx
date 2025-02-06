@@ -27,7 +27,7 @@ const projects = [
         tech: ["HTML", "CSS", "Bootstrap"],
         description: "A detailed replication of Meta news page.",
         github: "https://github.com/RimmiKaur/Meta-news-page ",
-        images: ["/images/meta-1.png", "/images/meta-2.png", "/images/meta-3.png"],
+        images: ["/images/meta-1.png", "/images/meta-2.png"],
     },
 
     {
@@ -109,7 +109,7 @@ const ProjectsSection = ({ darkMode }) => {
         <div className={`w-full mx-auto p-10 md:pt-10  md:p-44 md:pb-10 pb-10 ${darkMode ? "bg-white text-gray-900" : "bg-gray-900 text-white"}`}>
             <h2 className={`text-4xl font-bold text-center ${darkMode ? "bg-white text-gray-900" : "bg-gray-900 text-white"}0 mb-10`}>🚀 My Projects</h2>
 
-            <div className="flex justify-center space-x-4 mb-8">
+            <div className="flex justify-center space-x-4 mb-8 md:block hidden">
                 {categories.map((category) => (
                     <motion.button
                         key={category}

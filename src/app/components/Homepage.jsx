@@ -66,17 +66,17 @@ export default function HomePage({ darkMode }) {
   }, []);
 
   return (
-    <div className={` flex flex-col justify-center items-center transition-colors duration-300 pt-24 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}>
+    <div className={` w-full flex flex-col grow justify-center items-center transition-colors duration-300 pt-24 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}>
       <img src="/images/rimmikaur.jpg" alt="Rimmi Kaur" className="w-52 h-52 object-cover rounded-full border-[5px]" />
 
       <section ref={heroRef} className="text-center relative overflow-hidden">
-        <h1 className="text-6xl font-bold relative p-3">
+        <h1 className=" text-5xl md:text-6xl font-bold relative p-3 ">
           Hello, I'm {" "}
           <span className="m-0 p-0 inline-block overflow-hidden">
             <span ref={textRef} className="text-blue-500 inline-block m-0 p-0" dangerouslySetInnerHTML={{ __html: title }}></span>
           </span>
         </h1>
-        <p className="text-lg text-gray-400 mt-3 px-36">
+        <p className="text-lg text-gray-400 mt-3  p-10 md:px-36">
           MERN Stack Developer | Frontend Enthusiast
           <br/>
           <br/>
